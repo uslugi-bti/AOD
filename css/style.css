@@ -277,7 +277,8 @@ header {
 .block:after {
 	content: '';
 	position: absolute;
-	left: 48.2%;
+	left: 50%;
+	transform: translate(-50%, 0);
 	border-top: 13px solid #fff;
 	width: 0;
 	height: 0;
@@ -374,11 +375,38 @@ header {
 	padding: 126px 10px 69px 10px;
 }
 .feed__row {
-	display: flex;
+	/*display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: center;*/
 }
-.feed__body {}
+.feed__row .slick-list {
+	overflow: hidden;
+}
+.feed__row .slick-track {
+	display: flex;
+}
+.feed__row .slick-dots {
+	display: flex;
+	justify-content: center;
+	margin: 105px 0 0 0;
+}
+.feed__row .slick-dots li {
+	margin: 0 11px 0 0;
+	width: 11px;
+	height: 11px;
+	background-color: rgba(40,47,53,0.0);
+	border: 1px solid #c8c8c8;
+	border-radius: 50%;
+}
+.feed__row .slick-dots li.slick-active {
+	background-color: #a9afb3;
+}
+.feed__row .slick-dots li:last-child {
+	margin: 0;
+}
+.feed__row .slick-dots li button {
+	font-size: 0;
+}
 .feed__logo {
 	width: 32px;
 	margin: 0 auto;
@@ -409,32 +437,6 @@ header {
 	font-style: italic;
 	color: #848789;
 	text-align: center;
-}
-.feed__points {
-	padding: 105px 0 0 0;
-	width: 100%;
-}
-.points__row {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.feed__points span {
-	display: inline-block;
-	width: 11px;
-	height: 11px;
-	background-color: rgba(40,47,53,0.0);
-	border: 1px solid #c8c8c8;
-	border-radius: 50%;
-	margin: 0 11px 0 0;
-}
-.feed__points span.active {
-	width: 11px;
-	height: 11px;
-	background-color: #a9afb3;
-}
-.feed__points span:last-child {
-	margin: 0;
 }
 .shop {
 	width: 100%;
