@@ -5,4 +5,8 @@ $(document).ready(function () {
 		$(".menu__icon").toggleClass("active");
 		$("body").toggleClass("active");
 	});
+	$(".feed__row").slick({
+		arrows: false,
+		dots: true
+	})
 });
